@@ -6,15 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class TutorialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
-        Intent intent = new Intent(this, TutorialActivity.class);
-        startActivity(intent);
     }
 
-    //hello
+    public void change_page(View view){
+        Intent home = new Intent(this, HomeActivity.class);
+        startActivity(home);
+    }
 }
