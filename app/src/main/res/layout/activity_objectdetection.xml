@@ -7,14 +7,14 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="262dp"
         android:background="?android:selectableItemBackground"
-        android:scaleType="fitXY"
         android:onClick="obj_to_home"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,15 +22,16 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="0dp"
+        android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="11dp"
         android:background="?android:selectableItemBackground"
-        android:scaleType="fitXY"
         android:onClick="obj_to_settings"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_settings_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

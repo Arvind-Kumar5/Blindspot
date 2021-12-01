@@ -8,12 +8,12 @@
 
 
     <include
-        android:id="@+id/homeButton"/>
-        //layout="@layout/home_button" />
+        android:id="@+id/homeButton"
+        layout="@layout/home_button" />
 
     <include
-        android:id="@+id/include"/>
-        //layout="@layout/settings_button" />
+        android:id="@+id/include"
+        layout="@layout/settings_button" />
 
     <Button
         android:id="@+id/tutorialButton"
