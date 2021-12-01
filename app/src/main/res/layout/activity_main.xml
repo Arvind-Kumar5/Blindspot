@@ -18,4 +18,6 @@
     <include />
         //layout="@layout/home_button"/>
 
+    <include layout="@layout/home_button"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
