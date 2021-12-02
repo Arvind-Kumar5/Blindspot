@@ -34,21 +34,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.688" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="53dp"
-        android:layout_height="56dp"
-        android:background="?android:selectableItemBackground"
-        android:onClick="home_to_settings"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
-        app:srcCompat="@drawable/ic_baseline_settings_24"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <include layout="@layout/settings_button" />
 
     <ImageView
         android:id="@+id/logo"

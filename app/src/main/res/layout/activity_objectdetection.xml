@@ -3,34 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ObjectDetection">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="18dp"
+
+    <include layout="@layout/home_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="262dp"
-        android:background="?android:selectableItemBackground"
-        android:scaleType="fitXY"
-        android:onClick="obj_to_home"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_home" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="11dp"
-        android:background="?android:selectableItemBackground"
-        android:scaleType="fitXY"
-        android:onClick="obj_to_settings"
+        android:layout_marginStart="10dp"
+        android:text="Object Detection"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_settings_24" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <include layout="@layout/settings_button" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

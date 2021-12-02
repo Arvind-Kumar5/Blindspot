@@ -14,11 +14,19 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    public void home_to_settings(View view){
+    // go to home page
+    public void home(View view){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    // go to settings page
+    public void settings(View view) {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 
+    // go to object detection page
     public void home_to_obj(View view){
         Intent intent = new Intent(this, ObjectDetection.class);
         startActivity(intent);

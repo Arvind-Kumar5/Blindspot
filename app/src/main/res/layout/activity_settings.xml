@@ -10,33 +10,18 @@
         android:id="@+id/textViewSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
         android:text="Settings"
-        android:textSize="35dp"
-        app:layout_constraintBottom_toTopOf="@+id/volBar"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="113dp"
-        android:background="?android:selectableItemBackground"
-        android:onClick="obj_to_home"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/textViewSettings"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_home"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <include
+        android:id="@+id/homeButton"
+        layout="@layout/home_button" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -47,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/volBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
         app:srcCompat="@drawable/ic_volume_24" />
 
     <SeekBar
@@ -73,7 +58,7 @@
         app:srcCompat="@drawable/ic_baseline_accessibility_new_24" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/helpLogo"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="52dp"

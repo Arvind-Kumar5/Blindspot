@@ -7,13 +7,22 @@
     tools:context=".HelpActivity">
 
 
-    <include
-        android:id="@+id/homeButton"/>
-        //layout="@layout/home_button" />
+    <include layout="@layout/home_button" />
 
-    <include
-        android:id="@+id/include"/>
-        //layout="@layout/settings_button" />
+    <TextView
+        android:id="@+id/helpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Help"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <include layout="@layout/settings_button" />
 
     <Button
         android:id="@+id/tutorialButton"
@@ -22,16 +31,18 @@
         android:layout_marginTop="20dp"
         android:onClick="tutorial"
         android:text="tutorial"
-        app:layout_constraintTop_toBottomOf="@id/homeButton"
+        app:layout_constraintTop_toBottomOf="@id/helpTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -47,12 +58,11 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
         <TextView
+            android:id="@+id/faqs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="question 1\nquestion 2\nquestion 3\nquestion 4" />
+            android:text="" />
 
 
     </LinearLayout>

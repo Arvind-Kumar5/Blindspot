@@ -16,12 +16,14 @@ public class ObjectDetection extends AppCompatActivity {
         setContentView(R.layout.activity_objectdetection);
     }
 
-    public void obj_to_home(View view){
+    // go to home page
+    public void home(View view){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
-    public void obj_to_settings(View view){
+    // go to settings page
+    public void settings(View view) {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
