@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Blindspot">
         <activity
+            android:name=".ObjectDetection"
+            android:exported="true" />
+        <activity
             android:name=".SettingsActivity"
             android:exported="true" />
         <activity
