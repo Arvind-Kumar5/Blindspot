@@ -3,17 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.346875" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.346875" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.346875" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/drawable/ic_home.xml" value="0.346875" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/drawable/ic_launcher_background.xml" value="0.346875" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/drawable/ic_volume_24.xml" value="0.37552083333333336" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_help.xml" value="0.5" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_home.xml" value="0.4773550724637681" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_objectdetection.xml" value="0.4773550724637681" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_settings.xml" value="0.4773550724637681" />
+        <entry key="..\:/Users/littl/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_tutorial.xml" value="0.4773550724637681" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.10277777777777777" />
-        <entry key="app/src/main/res/layout/activity_help.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1947463768115942" />
-        <entry key="app/src/main/res/layout/activity_objectdetection.xml" value="0.21784420289855072" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_tutorial.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.17617753623188406" />
+        <entry key="app/src/main/res/layout/activity_tutorial.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/buttons.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/home_button.xml" value="0.1947463768115942" />
         <entry key="app/src/main/res/layout/settings_button.xml" value="0.17617753623188406" />
-        <entry key="app/src/main/res/layout/title_layout.xml" value="0.221875" />
       </map>
     </option>
   </component>
