@@ -40,7 +40,7 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
-    public void obj_to_home(View view){
+    public void home(View view){
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
