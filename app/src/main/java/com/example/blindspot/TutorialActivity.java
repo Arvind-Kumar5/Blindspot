@@ -33,6 +33,7 @@ public class TutorialActivity extends AppCompatActivity {
                             || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                         Log.e("TTS", "Language not supported");
                     } else {
+                        mTTS.speak("You are currently on the tutorial page. Click on the middle of the screen to understand how to use the app.", TextToSpeech.QUEUE_FLUSH, null,null);
                         tutorialText.setEnabled(true);
                     }
                 } else {
