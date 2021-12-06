@@ -7,16 +7,19 @@
     tools:context=".TutorialActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
         android:text="Tutorial"
         android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -24,11 +27,24 @@
         android:layout_height="57dp"
         android:layout_marginBottom="33dp"
         android:background="?android:selectableItemBackground"
-        android:scaleType="fitXY"
         android:onClick="change_page"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="108dp"
+        android:text="Blindspot is an application used to help those with sight disabilities. We have made the buttons large enough for those with disabilities
+to click the screen and continue on to the applications. If you click the screen, it should enable the text to speech if it is required. At the bottom of this page,
+there is an arrow to take to the application. This is just a tutorial and if you need help you can always come back here through the settings icon."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
