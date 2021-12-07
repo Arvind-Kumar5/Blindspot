@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.435"
-        app:srcCompat="@drawable/screen_shot_2021_11_16_at_6_07_27_pm" />
+        app:srcCompat="@drawable/blindspot_logo_trans" />
 
     <TextView
         android:id="@+id/textView2"
