@@ -24,27 +24,6 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
         getIntent();
 
-        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-        int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
-        SeekBar volControl = (SeekBar)findViewById(R.id.volBar);
-        volControl.setMax(maxVolume);
-        volControl.setProgress(curVolume);
-        volControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onStopTrackingTouch(SeekBar arg0) {
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar arg0) {
-            }
-
-            @Override
-            public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
-                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, arg1, 0);
-            }
-        });
-
         mTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -65,6 +44,37 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         });
+
+        AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+        SeekBar volControl = (SeekBar)findViewById(R.id.volBar);
+        volControl.setMax(maxVolume);
+        volControl.setProgress(curVolume);
+        volControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onStopTrackingTouch(SeekBar arg0) {
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar arg0) {
+            }
+
+            @Override
+            public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, arg1, 0);
+
+                if(mTTS != null){
+                    mTTS.stop();
+                }
+
+                float volume_level= Math.round(audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)*6.66);
+                int roundVol = (int)volume_level;
+                String volumeString = "Volume is " + Integer.toString(roundVol) + " percent.";
+                mTTS.speak(volumeString, TextToSpeech.QUEUE_FLUSH, null, null);
+            }
+        });
+
     }
 
     public void home(View view){
@@ -73,6 +83,9 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void toAccessibility (View view) {
+        if(mTTS != null){
+            mTTS.stop();
+        }
         mTTS.speak("You clicked on accessibility.", TextToSpeech.QUEUE_FLUSH, null,null);
         Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -80,6 +93,9 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void toHelp (View view) {
+        if(mTTS != null){
+            mTTS.stop();
+        }
         mTTS.speak("You clicked on help.", TextToSpeech.QUEUE_FLUSH, null,null);
         Intent intent = new Intent(this, HelpActivity.class);
         startActivity(intent);

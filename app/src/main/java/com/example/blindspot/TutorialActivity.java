@@ -58,16 +58,15 @@ public class TutorialActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
+    protected void onStop() {
         if (mTTS != null) {
             mTTS.stop();
-            mTTS.shutdown();
         }
-
-        super.onDestroy();
+        super.onStop();
     }
 
     public void change_page(View view){
+        onStop();
         Intent home = new Intent(this, HomeActivity.class);
         startActivity(home);
     }

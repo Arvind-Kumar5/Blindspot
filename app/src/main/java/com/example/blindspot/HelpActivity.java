@@ -60,6 +60,11 @@ public class HelpActivity extends AppCompatActivity {
     }
 
     private void faq(){
+
+        if(mTTS != null){
+            mTTS.stop();
+        }
+
         String text = faqs.getText().toString();
 
         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
@@ -67,18 +72,33 @@ public class HelpActivity extends AppCompatActivity {
 
     // go to home page
     public void home(View view){
+
+        if(mTTS != null){
+            mTTS.stop();
+        }
+
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
     // go to tutorials page
     public void tutorial(View view) {
+
+        if(mTTS != null){
+            mTTS.stop();
+        }
+
         Intent intent = new Intent(this, TutorialActivity.class);
         startActivity(intent);
     }
 
     // go to settings page
     public void settings(View view) {
+
+        if(mTTS != null){
+            mTTS.stop();
+        }
+
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
