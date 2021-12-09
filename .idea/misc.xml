@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arvind/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_javamain.xml" value="0.1" />
+        <entry key="..\:/Users/Arvind/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Arvind/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_objectdetection.xml" value="0.33" />
+        <entry key="..\:/Users/Arvind/AndroidStudioProjects/Blindspot/app/src/main/res/layout/activity_settings.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.3814535830574875" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.22735507246376813" />
       </map>

@@ -51,6 +51,7 @@ public class SettingsActivity extends AppCompatActivity {
         SeekBar volControl = (SeekBar)findViewById(R.id.volBar);
         volControl.setMax(maxVolume);
         volControl.setProgress(curVolume);
+
         volControl.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onStopTrackingTouch(SeekBar arg0) {
@@ -78,6 +79,9 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void home(View view){
+        if(mTTS != null){
+            mTTS.stop();
+        }
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }

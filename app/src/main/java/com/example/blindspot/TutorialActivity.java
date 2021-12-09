@@ -42,6 +42,7 @@ public class TutorialActivity extends AppCompatActivity {
             }
         });
 
+
         tutorialText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -7,22 +7,38 @@
     tools:context=".ObjectDetection">
 
 
-    <include layout="@layout/home_button" />
+    <include
+        android:id="@+id/include2"
+        layout="@layout/home_button" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:text="Object Detection"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/settings_button" />
+    <include
+        android:id="@+id/include3"
+        layout="@layout/settings_button" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="333dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

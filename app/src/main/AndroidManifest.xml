@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.blindspot">
 
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +14,9 @@
         android:theme="@style/Theme.Blindspot">
         <activity
             android:name=".ObjectDetection"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".SettingsActivity"
@@ -25,7 +31,7 @@
             android:name=".HelpActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".JAVAMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
