@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -40,8 +41,8 @@ public class HelpActivity extends AppCompatActivity {
             }
         });
 
-        String questions = "What is currently here?:\n" +
-                "I am going to type these questions" +
+        String questions = "This is a sample question we will use for now:\n" +
+                "Sample text " +
                 "to see how good they look when there is more text." +
                 "I think that this is a reasonable amount.\n\n" +
                 "Why are you doing this?:\nWe are taking CS 407 at UW Madison " +
@@ -50,6 +51,7 @@ public class HelpActivity extends AppCompatActivity {
                 "in the fall of 2021. This is our final project\n\n";
         faqs = (TextView) findViewById(R.id.faqs);
         faqs.setText(questions);
+        faqs.setMovementMethod(new ScrollingMovementMethod());
         faqs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,6 +80,17 @@ public class HelpActivity extends AppCompatActivity {
         }
 
         Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void google_form(View view){
+        if (mTTS != null){
+            mTTS.stop();
+        }
+
+        mTTS.speak("Ask a question", TextToSpeech.QUEUE_FLUSH, null,null);
+
+        Intent intent = new Intent(this, GoogleForm.class);
         startActivity(intent);
     }
 

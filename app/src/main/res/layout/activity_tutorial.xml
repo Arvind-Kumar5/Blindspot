@@ -42,7 +42,9 @@
         android:layout_marginBottom="108dp"
         android:text="Blindspot is an application used to help those with sight disabilities. We have made the buttons large enough for those with disabilities
 to click the screen and continue on to the applications. If you click the screen, it should enable the text to speech if it is required. At the bottom of this page,
-there is an arrow to take to the application. This is just a tutorial and if you need help you can always come back here through the settings icon."
+there is an arrow to take to the application. This is just a tutorial and if you need help you can always come back here through the settings icon. \n\nBlindspot will spot objects for you and if you touch the screen, you will receive a verbal alert of the incoming object. Navigate to the object detection page to do so. The settings page
+allows you to change your volume and accessabilities. If you go to the help page, you can post a question that we will review or you can take a look at our FAQ. A link
+back to this tutorial page is available on the help page. You will need a functioning camera and allow access to it to start spotting."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
