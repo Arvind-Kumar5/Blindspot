@@ -1,0 +1,1 @@
+Live object detection implementation was done with help from https://linuxtut.com/en/fc661a72d08f7f59cf41/. We went through the code and modified some of the features in order to better fit with the app such as text-to-speech for the object detection
