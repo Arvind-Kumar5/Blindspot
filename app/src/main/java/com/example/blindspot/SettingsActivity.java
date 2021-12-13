@@ -35,8 +35,8 @@ public class SettingsActivity extends AppCompatActivity {
                         Log.e("TTS", "Language not supported");
                     } else {
                         String text = "On the settings page, you can go to accessibility, help, or you can change the volume of the app." +
-                                ".The home button is on the top left, the volume button is below the home button, the accessibility is below the volume button, and" +
-                                ".The help option is below the accessibility icon";
+                                "The home button is on the top left, the volume button is below the home button, the accessibility is below the volume button, and" +
+                                "The help option is below the accessibility icon";
                         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
                     }
                 } else {
